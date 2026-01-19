@@ -1,0 +1,429 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d3f0bb;
+    color: rgb(3, 3, 0);
+    padding-top: 0 px;
+    /* espacio igual a la altura del navbar */
+}
+
+/* =====================
+   RESET MÁRGENES DE TÍTULOS
+===================== */
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /* centra todos los títulos */
+}
+
+/* =====================
+   H1
+===================== */
+h1 {
+    color: #1ae045;
+    transition: transform 1.3s;
+    /* animación suave */
+    margin-bottom: 10px;
+    /* espacio controlado debajo */
+}
+
+h1:hover {
+    transform: scale(1.5);
+    /* aumenta al pasar el mouse */
+}
+
+/* =====================
+   H2
+===================== */
+h2 {
+    color: #5c5858;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    /* tamaño base */
+    line-height: 1.5;
+    /* altura de línea para párrafos largos */
+    transform: scale(1);
+    /* empieza tamaño normal */
+    transform-origin: top;
+    /* escala desde arriba */
+    transition: transform 2.5s, color 2.5s;
+    /* animación suave */
+    margin-bottom: 5px;
+    /* espacio controlado debajo */
+}
+
+h2:hover {
+    transform: scale(1.05);
+    /* ligero zoom al pasar el mouse */
+    color: #010301;
+}
+
+/* =====================
+   H3
+===================== */
+h3 {
+    color: #091dd3;
+    transition: transform 1.3s;
+    margin-top: 0;
+    /* evita separación extra arriba */
+}
+
+h3:hover {
+    transform: scale(1.5);
+}
+
+
+
+a {
+    color: #141403;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.resultado {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.rounded-circle {
+    width: 200px;
+    /* ajusta según necesites */
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* MUY IMPORTANTE */
+    border: 0px solid #00010f;
+    box-shadow: 0 4px 8px rgba(22, 22, 21, 0.877);
+    transition: transform 1.3s;
+}
+
+.rounded-circle:hover {
+    transform: scale(1.3);
+}
+
+.educacion-row {
+    display: flex;
+    flex-wrap: wrap;
+    /* permite que los bloques bajen si no caben */
+    justify-content: center;
+    /* centra la fila */
+    align-items: flex-start;
+    /* todas las imágenes alineadas arriba */
+    gap: 35px;
+    /* espacio entre bloques */
+}
+
+.educacion-row p {
+    color: #01010e;
+    /* Cambia el color de la letra */
+    font-family: 'Arial', sans-serif;
+    /* Cambia la tipografía */
+    font-size: 18px;
+    /* Tamaño de letra */
+    font-weight: 600;
+    /* Grosor de la letra */
+    text-align: center;
+    /* Opcional: centrar el texto */
+}
+
+.educacion-item {
+    max-width: 200px;
+    /* ancho de cada bloque */
+    flex: 1 1 200px;
+    /* flexible, pero mínimo 200px */
+}
+
+.educacion-item img {
+    width: 180px;
+    height: 180px;
+    border-radius: 80%;
+    /* círculo */
+    border: 3px solid #47698b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.educacion-item img:hover {
+    transform: scale(1.05);
+}
+
+.educacion-text {
+    text-align: justify;
+    /* texto justificado */
+}
+
+.educacion-text p {
+    margin: 5px 0;
+    text-align: center;
+    /* título centrado */
+    margin-bottom: 5px;
+}
+
+/* Responsive para móviles */
+@media (max-width: 991px) {
+    .mi-navbar a:hover {
+        transform: none;
+    }
+}
+
+.mi-navbar {
+    background-color: #2b8bb8 !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mi-cv {
+    font-size: 24px;
+    font-weight: bold;
+    color: #091dd3;
+}
+
+.mi-navbar a {
+    color: rgb(1, 0, 5);
+    font-size: clamp(14px, 2vw, 20px);
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+    display: inline-block;
+    width: fit-content;
+    border-radius: 99px;
+    padding: 8px 16px;
+
+    transition:
+        color 0.3s ease,
+        background-color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+.mi-navbar a:hover {
+    background-color: rgba(156, 214, 133, 0.445);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    color: #c3cbee;
+    transform: translateY(-6px) scale(1.05);
+}
+
+
+.navbar-toggler {
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+#educacion {
+    scroll-margin-top: 110px;
+    /* altura real del navbar */
+}
+
+#educacion,
+#cursos,
+#inicio {
+    scroll-margin-top: 110px;
+}
+
+#educacion h2 {
+    color: #0a0301;
+    font-family: 'Georgia', serif;
+    font-size: 32px;
+}
+
+.contacto {
+    transition: transform 0.9s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.contacto:hover {
+    transform: translateY(-10px) scale(1.5);
+    color: #011530d0;
+}
+
+#cursos .card {
+    border-radius: 20px;
+    /* Bordes redondeados */
+    background-color: #333;
+    /* Color de fondo oscuro */
+    color: #fff;
+    /* Color de texto blanco */
+    transition: all 0.3s ease;
+}
+
+#cursos .card:hover {
+    transform: translateY(-5px);
+    /* Efecto hover (sube) */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    /* Sombra suave */
+}
+
+#cursos .card-title {
+    color: #4caf50;
+    /* Color verde para el título */
+}
+
+#cursos .card-text {
+    color: #ccc;
+    /* Color gris claro para el texto */
+}
+
+#cursos .card-body {
+    padding: 20px;
+}
+
+#cursos h2 {
+    color: #0a0301;
+    font-family: 'Georgia', serif;
+    font-size: 32px;
+}
+
+/* Contador visible */
+#countdown {
+    font-family: 'Courier New', Courier, monospace;
+    /* Tipo de letra */
+    font-size: 20px;
+    /* Tamaño de la letra */
+    font-weight: normal;
+    /* Grosor */
+    color: #080002;
+    /* Color del texto */
+    text-align: center;
+    /* Centrar el contador */
+    margin-bottom: 10px;
+    /* Separación de otros elementos */
+    background-color: rgb(233, 250, 82);
+    /* Fondo opcional */
+    padding: 10px 20px;
+    /* Espacio dentro del recuadro */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    /* Sombra opcional */
+    display: inline-block;
+    /* Para que el padding funcione bien */
+    transition: all 0.3s ease;
+    /* Efecto suave si cambia algo */
+}
+
+#countdown-edu {
+    font-family: 'Courier New', Courier, monospace;
+    /* Tipo de letra */
+    font-size: 20px;
+    /* Tamaño de la letra */
+    font-weight: normal;
+    /* Grosor */
+    color: #080002;
+    /* Color del texto */
+    text-align: center;
+    /* Centrar el contador */
+    margin-bottom: 10px;
+    /* Separación de otros elementos */
+    background-color: rgb(245, 248, 85);
+    /* Fondo opcional */
+    padding: 10px 20px;
+    /* Espacio dentro del recuadro */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    /* Sombra opcional */
+    display: inline-block;
+    /* Para que el padding funcione bien */
+    transition: all 0.3s ease;
+    /* Efecto suave si cambia algo */
+}
+
+#countdown-exp {
+    font-family: 'Courier New', Courier, monospace;
+    /* Tipo de letra */
+    font-size: 20px;
+    /* Tamaño de la letra */
+    font-weight: normal;
+    /* Grosor */
+    color: #000308;
+    /* Color del texto */
+    text-align: center;
+    /* Centrar el contador */
+    margin-bottom: 10px;
+    /* Separación de otros elementos */
+    background-color: rgb(204, 247, 48);
+    /* Fondo opcional */
+    padding: 10px 20px;
+    /* Espacio dentro del recuadro */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 5px 10px rgb(83, 83, 83);
+    /* Sombra opcional */
+    display: inline-block;
+    /* Para que el padding funcione bien */
+    transition: all 0.3s ease;
+    /* Efecto suave si cambia algo */
+}
+
+#experiencia {
+    display: block;
+    /* Asegúrate de que el contenedor se muestre */
+}
+
+#experiencia .card {
+    border-radius: 20px;
+    background-color: rgba(154, 179, 109, 0.281);
+    /* Fondo oscuro */
+    color: rgb(9, 10, 10);
+    /* Color de texto */
+    transition: all 0.3s ease;
+}
+
+#experiencia .card:hover {
+    transform: translateY(-5px);
+    /* Efecto hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    /* Sombra suave */
+}
+
+#experiencia .card-subtitle {
+    background-color: #22b9ff4d;
+    /* color de la franja */
+    color: rgb(8, 6, 6);
+    /* texto visible sobre la franja */
+    padding: 4px 8px;
+    /* espacio interno */
+    border-radius: 30px;
+    /* bordes redondeados */
+    display: inline-block;
+    /* no ocupa toda la línea */
+    font-size: 1rem;
+    /* tamaño un poco más pequeño */
+    margin-bottom: 0.8rem;
+    /* separa del párrafo siguiente */
+    font-weight: bold;
+
+}
+
+#experiencia .card-text {
+    color: #080808;
+    /* Color del subtítulo */
+    font-size: 15px;
+}
+
+#experiencia h2 {
+    color: #0a0301;
+    font-family: 'Georgia', serif;
+    font-size: 32px;
+}
+
+#experiencia .card-title {
+    font-style: normal;
+    color: #080808;
+    /* Color del subtítulo */
+    font-size: 16px;
+}

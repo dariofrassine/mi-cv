@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mi sitio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/estilo.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mi-navbar ">
+
+    <div class="container-fluid">
+      <span class="mi-cv"> <audio id="audio" controls>
+          <source src="/musica.mp3.mp3" type="audio/mpeg">
+          Tu navegador no soporta audio.
+        </audio></span>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav w-100 d-flex justify-content-evenly">
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="link-cursos">Cursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://wa.me/542604614347?" target="_blank" id="link-contacto">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="link-experiencia">Experiencia Laboral</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="link-educacion">Educacion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container text-center my-5" id="inicio">
+    <div class="container">
+      <img src="../static/imagenes/foto1.png" alt="foto.png" class="img-fluid rounded-circle" width="170" height="170">
+      <h1>Bienvenido a mi CV</h1>
+
+      <h3>Dario Frassine</h3>
+
+      <h2>
+        Soy un profesional con más de 15 años de experiencia en la industria alimenticia, cerealera y química. A lo
+        largo de mi carrera, he trabajado asegurando la calidad de los productos, optimizando procesos y liderando
+        equipos para que cada operación funcione de la mejor manera posible. Me motiva encontrar soluciones
+        prácticas, reducir fallas y mantener altos estándares, siempre con un enfoque en resultados y mejora
+        continua.
+        En los últimos años, también me he interesado por la programación y la tecnología, buscando nuevas formas
+        de aplicar herramientas digitales para hacer los procesos más eficientes y precisos. Me gusta combinar mi
+        experiencia técnica con estas nuevas habilidades, aprendiendo y creciendo constantemente.
+      </h2>
+
+    </div>
+
+    <div class="container my-5" id="educacion" style="display:none">
+      <h2>Educacion</h2>
+      <!-- Contador Visible -->
+      <div id="countdown-edu" class="countdown">Educación desaparecerá en: 60 segundos</div>
+
+      <!-- Mensaje de advertencia -->
+      <div id="warning-edu" class="warning" style="display:none;">¡La sección de educación está por desaparecer!</div>
+
+      <div class="educacion-row d-flex justify-content-center flex-wrap">
+
+        <!-- Primer bloque -->
+        <div class="educacion-item">
+          <img src="../static/imagenes/unr.png" alt="Universidad">
+
+          <p>Licenciatura en tecnologia de los Alimentos</p>
+
+        </div>
+
+        <!-- Segundo bloque -->
+        <div class="educacion-item">
+          <img src="../static/imagenes/unr.png" alt="Universidad">
+
+          <p>Pos título en Tecnología Aplicada a la Industria Alimentaria</p>
+
+        </div>
+
+        <!-- Tercer bloque -->
+        <div class="educacion-item">
+          <img src="../static/imagenes/galileo.jpg" alt="Tecnicatura">
+
+          <p>Tecnicatura en Agroindustria de los Alimentos</p>
+
+        </div>
+
+        <!-- Cuarto bloque -->
+        <div class="educacion-item ">
+          <img src="../static/imagenes/perito.png" alt="curso">
+
+          <p>Perito Clasificador de Cereales y Oleaginosas</p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5" id="cursos" style="display:none">
+      <h2>Cursos Realizados</h2>
+      <!-- Contador Visible -->
+      <div id="countdown" class="countdown">Cursos desaparecerá en: 60 segundos</div>
+
+      <!-- Mensaje de advertencia -->
+      <div id="warning" class="warning" style="display:none;">¡Cursos está por desaparecer!</div>
+
+      <div class="row">
+
+        <!-- Curso 1 -->
+        <div class="col-md-4 mb-3" id="curso1">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Automatización Industrial y Programación PLC</h5>
+              <p class="card-text">Universidad Nacional de Rosario<br> UNR <br> Marzo - Mayo 2023</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Curso 2 -->
+        <div class="col-md-4 mb-3" id="curso2">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Curso en manipulación de alimentos</h5>
+              <p class="card-text">ASSAL- Agencia Santafesina de Seguridad Alimentaria<br>
+                Comuna de Villa Eloísa <br> Noviembre 2022</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Curso 3 -->
+        <div class="col-md-4 mb-3" id="curso3">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Calidad y arbitraje en el comercio de granos</h5>
+              <p class="card-text">Bolsa de Comercio de Rosario <br>Septiembre 2018</p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Curso 4 -->
+        <div class="col-md-4 mb-3" id="curso4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Sistema de gestión de calidad ISO 9001-2008</h5>
+              <p class="card-text">Facultad Regional San Rafael Mendoza UTN <br> Octubre 2014</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Curso 4 -->
+        <div class="col-md-4 mb-3" id="curso5">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Seminario “economía, productividad y derechos humanos”</h5>
+              <p class="card-text">Universidad Tecnológica Nacional Facultad Regional, San Rafael UTN<br>
+                Desarrollado por el Ing. Juan Carlos Minghetti <br> Octubre 2008</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Curso 6 -->
+        <div class="col-md-4 mb-3" id="curso6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Sistema de gestión de calidad ISO 9001-2000</h5>
+              <p class="card-text">Planta Masilly S.A, San Luis <br> Mayo 2008</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Curso 7 -->
+        <div class="col-md-4 mb-3" id="curso7">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Buenas practicas de manufactura e higiene y seguridad industrial</h5>
+              <p class="card-text">Molino INDALAR, JB, Alberdi 1355
+                Dictado por el Ing. Químico Pedro Cabrera <br> Junio 2005</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Curso 8 -->
+        <div class="col-md-4 mb-3" id="curso8">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Seminario en tecnología de los cereales</h5>
+              <p class="card-text">Facultad de Ciencias Agrarias, Zaballa<br>
+                Profesor: Ing. Agrónomo Carlos Perigo <br> Duración 4 meses <br>2001 -2002</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Curso 9 -->
+        <div class="col-md-4 mb-3" id="curso8">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Idioma ingles</h5>
+              <p class="card-text">Instituto de Cultura Inglesa<br>
+                Villa Eloisa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- Sección de Experiencia Laboral (oculta por defecto) -->
+    <div class="container my-5" id="experiencia" style="display:none;">
+      <h2>Experiencia Laboral</h2>
+
+      <!-- Contador -->
+      <div id="countdown-exp"></div>
+
+      <!-- Advertencia -->
+      <div id="warning-exp" style="display:none; font-weight:bold; ">
+        ¡La sección desaparecerá pronto!
+      </div>
+
+      <div class="d-flex flex-wrap gap-3 mt-4">
+
+        <!-- Experiencia 1 -->
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">| Laboratorio | Perito Clasificador | Operario |</h5>
+            <h6 class="card-subtitle mb-2">Molinos Río de la Plata<br> 2024-2025</h6>
+            <p class="card-text">- Control de calidad y muestreo.
+              - Operación de línea de envasado y monitoreo físico‑químico de aceites.
+              - Mejora de tiempos y reducción de errores en línea productiva.|</p>
+          </div>
+        </div>
+
+        <!-- Experiencia 2 -->
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Perito Clasificador de Cereales y Oleaginosas</h5>
+            <h6 class="card-subtitle mb-2">Bolsa de Comercio de Rosario 2017-2022</h6>
+            <p class="card-text">- Determinación de transgénicos (soja)
+              - Inspección de calidad y clasificación de materias primas.
+              - Analisis de Peso hectolitrico y proteinas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Experiencia 3 -->
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Laboratorista en Análisis Químico <br> </h5>
+            <h6 class="card-subtitle mb-2">Manferro-Ferro-Aleaciones S.A 2015-2016</h6>
+            <p class="card-text">- Ensayos químicos de ferro-silicio.
+              - Análisis ambientales de silicio, humedad y cenizas.
+              - Uso de HPLC en procesos analíticos.</p>
+          </div>
+        </div>
+
+        <!-- Experiencia 4 -->
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Control de Calidad y Producción</h5>
+            <h6 class="card-subtitle mb-2"> Fabrica de Conservas<br> "Tiempo Libre SRL"<br> 2013-2015</h6>
+            <p class="card-text">-Implementación de FSSC 22000, HACCP e ISO 9001.<br>
+              - Supervisión de producción y personal operativo.<br>
+              - Mejora y estandarización de procesos.<br>
+              - Analisis de Brix y acidez</p>
+          </div>
+        </div>
+        <!-- Experiencia 5 -->
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Operario de Planta</h5>
+            <h6 class="card-subtitle mb-2">Agricultores Federados Argentinos (AFA)<br>2010-2013</h6>
+            <p class="card-text">- Gestión de trazabilidad mediante SAP para control de stock y materias primas.<br>
+              - Operación de secadora de torre.<br>
+              - Gestión de almacenaje en silos.<br>
+              - Carga y descarga de camiones</p>
+          </div>
+        </div>
+
+        <!-- Experiencia 6 -->
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Control de Calidad | Técnico Químico</h5>
+            <h6 class="card-subtitle mb-2">Fabrica de alimentos procesados<br>"Masilly S.A"<br>2008-2010</h6>
+            <p class="card-text">- Análisis de proteínas, grasas, humedad, acidez, cenizas y NaCl.<br>
+              - Control de procesos.<br>
+              - Gestión de documentación analítica BPM - POES - HACCP</p>
+          </div>
+        </div>
+
+        <!-- Experiencia 7 -->
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Laboratorio | Técnico Químico</h5>
+            <h6 class="card-subtitle mb-2">Fabrica de Harina de Maiz y Alimentos para Mascotas<br>"INDALAR
+              S.A"<br>2004-2007</h6>
+            <p class="card-text">- Control de materia prima.<br>
+              - Análisis de granulometría, grasa, proteína, humedad, ph.<br>
+              - Supervisión de personal<br>
+              - Control físico‑químico.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="container my-5" id="info-dario"></div>
+
+    <script>
+      // Función para manejar las secciones
+      function iniciarSeccion(linkId, seccionId, countdownId, warningId, tiempo = 60) {
+        const link = document.getElementById(linkId);
+        const seccion = document.getElementById(seccionId);
+        const countdown = document.getElementById(countdownId);
+        const warning = document.getElementById(warningId);
+
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+
+          if (seccion.style.display === 'none' || seccion.style.display === '') {
+            seccion.style.display = 'block';
+            seccion.scrollIntoView({ behavior: "smooth" });
+
+            let timeLeft = tiempo;
+            countdown.textContent = `La sección de ${seccionId.replace(/([A-Z])/g, ' $1').toLowerCase()} desaparecerá en: ${timeLeft} segundos`;
+
+
+            const timer = setInterval(() => {
+              timeLeft--;
+              countdown.textContent = `La sección de ${seccionId.replace(/([A-Z])/g, ' $1').toLowerCase()} desaparecerá en: ${timeLeft} segundos`;
+
+              // Mostramos el aviso 3 segundos antes
+              if (timeLeft === 3) {
+                warning.style.display = 'block';
+              }
+
+              if (timeLeft === 0) {
+                clearInterval(timer);
+                warning.style.display = 'none';
+                seccion.style.display = 'none';
+              }
+            }, 1000);
+
+          } else {
+            // Si ya estaba visible, la ocultamos inmediatamente
+            seccion.style.display = 'none';
+            warning.style.display = 'none';
+          }
+        });
+      }
+
+      // Inicializamos secciones con duración de 60 segundos
+      document.addEventListener('DOMContentLoaded', () => {
+        iniciarSeccion('link-cursos', 'cursos', 'countdown', 'warning', 60);
+        iniciarSeccion('link-educacion', 'educacion', 'countdown-edu', 'warning-edu', 60);
+        iniciarSeccion('link-experiencia', 'experiencia', 'countdown-exp', 'warning-exp', 60);
+      });
+    </script>
+
+
+
+
+
+
+    <script>
+      // Usamos fetch para obtener datos.json
+      fetch('/static/datos.json')
+        .then(response => response.json())
+        .then(data => {
+          // Cuando obtenemos los datos, los mostramos
+          const cont = document.getElementById('info-dario');
+          cont.innerHTML = `
+                            <p class="contacto"><strong>Mail:</strong> ${data.contacto.mail}</p>
+                            <p class="contacto"><strong>Teléfono:</strong> ${data.contacto.telefono}</p>
+                                
+                            `;
+        })
+        .catch(err => console.error('Error cargando datos.json:', err));
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
