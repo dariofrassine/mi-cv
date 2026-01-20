@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #d3f0bb;
+    background-color: #dcf0bb;
     background-image: url("imagenes/fondo.jpeg");
     color: rgb(3, 3, 0);
     padding-top: 0 px;
@@ -112,6 +112,8 @@ form {
     /* MUY IMPORTANTE */
     border: 0px solid #00010f;
     box-shadow: 0 4px 8px rgba(22, 22, 21, 0.877);
+    /* mover hacia la izquierda */
+    margin-left: -200px; /* ajusta el número según necesites */
     transition: transform 1.3s;
 }
 
