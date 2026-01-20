@@ -59,7 +59,7 @@ class MiHandler(SimpleHTTPRequestHandler):
 
         # Sirve el index
         if path == "/":
-            self.path = "/template/index.html"
+            self.path = "/index.html"
             return super().do_GET()
 
         # Sirve JSON manualmente

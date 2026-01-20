@@ -1,9 +1,11 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #d3f0bb;
+    background-image: url("/static/imagenes/fondo.jpeg");
     color: rgb(3, 3, 0);
     padding-top: 0 px;
     /* espacio igual a la altura del navbar */
+    background-size: cover;        /* se adapta a la pantalla */
 }
 
 /* =====================
@@ -38,7 +40,7 @@ h1:hover {
    H2
 ===================== */
 h2 {
-    color: #5c5858;
+    color: #000000;
     font-family: Arial, sans-serif;
     font-size: 18px;
     /* tamaño base */
@@ -52,12 +54,17 @@ h2 {
     /* animación suave */
     margin-bottom: 5px;
     /* espacio controlado debajo */
+    font-weight: 700;
+    text-shadow: 2px 1px 3px rgb(4, 150, 247);
+    margin-top: 0px; /* baja el h2 100px desde el top */
 }
 
 h2:hover {
     transform: scale(1.05);
     /* ligero zoom al pasar el mouse */
-    color: #010301;
+    color: #070707;
+    text-shadow: 2px 1px 3px rgb(57, 153, 53);
+    
 }
 
 /* =====================
@@ -177,7 +184,7 @@ form {
 }
 
 .mi-navbar {
-    background-color: #2b8bb8 !important;
+    background-color: #6cacca31 !important;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-wrap: wrap;
@@ -209,7 +216,7 @@ form {
 .mi-navbar a:hover {
     background-color: rgba(156, 214, 133, 0.445);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
-    color: #c3cbee;
+    color: #152775;
     transform: translateY(-6px) scale(1.05);
 }
 
@@ -250,15 +257,6 @@ form {
     color: #011530d0;
 }
 
-#cursos .card {
-    border-radius: 20px;
-    /* Bordes redondeados */
-    background-color: #333;
-    /* Color de fondo oscuro */
-    color: #fff;
-    /* Color de texto blanco */
-    transition: all 0.3s ease;
-}
 
 #cursos .card:hover {
     transform: translateY(-5px);
@@ -268,17 +266,17 @@ form {
 }
 
 #cursos .card-title {
-    color: #4caf50;
+    color: #111311;
     /* Color verde para el título */
 }
 
 #cursos .card-text {
-    color: #ccc;
+    color: rgb(20, 4, 4);
     /* Color gris claro para el texto */
 }
 
-#cursos .card-body {
-    padding: 20px;
+#cursos .card{
+    background-color: rgba(111, 238, 79, 0.562);
 }
 
 #cursos h2 {
