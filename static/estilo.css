@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #d3f0bb;
-    background-image: url("/static/imagenes/fondo.jpeg");
+    background-image: url("imagenes/fondo.jpeg");
     color: rgb(3, 3, 0);
     padding-top: 0 px;
     /* espacio igual a la altura del navbar */
