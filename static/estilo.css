@@ -6,6 +6,8 @@ body {
     padding-top: 0 px;
     /* espacio igual a la altura del navbar */
     background-size: cover;        /* se adapta a la pantalla */
+    background-position: center;   /* centra la imagen */
+    background-repeat: no-repeat;  /* evita que se repita */
 }
 
 /* =====================
@@ -214,7 +216,7 @@ form {
 }
 
 .mi-navbar a:hover {
-    background-color: rgba(156, 214, 133, 0.445);
+    background-color: rgba(112, 214, 102, 0.589);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
     color: #152775;
     transform: translateY(-6px) scale(1.05);
@@ -222,12 +224,14 @@ form {
 
 
 .navbar-toggler {
-    border-top: 3px solid #ffffff;
-    border-bottom: 3px solid #ffffff;
+    border-top: 3px solid #0e0d0d;
+    border-bottom: 3px solid #141414;
 }
 
 .navbar-dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(29,25,25,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+   
 }
 
 #educacion {
