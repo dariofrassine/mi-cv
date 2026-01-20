@@ -178,12 +178,25 @@ form {
     margin-bottom: 5px;
 }
 
-/* Responsive para móviles */
 @media (max-width: 991px) {
+    /* Fondo responsive */
+    body {
+        background-size: cover;   /* o contain, según prefieras */
+        background-position: center;
+    }
+
+    /* Secciones ocupen toda la pantalla */
+    #inicio, #cursos, #educacion, #experiencia {
+        min-height: 100vh;
+    }
+
+    /* Navbar: quitar transform al hacer hover en móviles */
     .mi-navbar a:hover {
         transform: none;
     }
 }
+
+
 
 .mi-navbar {
     background-color: #6cacca31 !important;

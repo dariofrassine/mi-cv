@@ -15,7 +15,9 @@ __pycache__/
 # ---------------------------
 # Archivos generados automáticamente
 # ---------------------------
-/static/datos.json
+- /static/datos.json
++ # /static/datos.json
+
 
 # ---------------------------
 # IDEs / editores
